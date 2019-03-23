@@ -1,0 +1,4002 @@
+<odoo><data>
+
+		<record id="room0" model="hoteltrivago.rooms">
+			<field name="name">Room 0</field>
+			<field name="beds">3</field>
+			<field name="price">104</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room1" model="hoteltrivago.rooms">
+			<field name="name">Room 1</field>
+			<field name="beds">3</field>
+			<field name="price">85</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room2" model="hoteltrivago.rooms">
+			<field name="name">Room 2</field>
+			<field name="beds">2</field>
+			<field name="price">73</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room3" model="hoteltrivago.rooms">
+			<field name="name">Room 3</field>
+			<field name="beds">1</field>
+			<field name="price">118</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room4" model="hoteltrivago.rooms">
+			<field name="name">Room 4</field>
+			<field name="beds">3</field>
+			<field name="price">142</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room5" model="hoteltrivago.rooms">
+			<field name="name">Room 5</field>
+			<field name="beds">3</field>
+			<field name="price">69</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room6" model="hoteltrivago.rooms">
+			<field name="name">Room 6</field>
+			<field name="beds">2</field>
+			<field name="price">84</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room7" model="hoteltrivago.rooms">
+			<field name="name">Room 7</field>
+			<field name="beds">1</field>
+			<field name="price">137</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room8" model="hoteltrivago.rooms">
+			<field name="name">Room 8</field>
+			<field name="beds">1</field>
+			<field name="price">139</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room9" model="hoteltrivago.rooms">
+			<field name="name">Room 9</field>
+			<field name="beds">1</field>
+			<field name="price">123</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room10" model="hoteltrivago.rooms">
+			<field name="name">Room 10</field>
+			<field name="beds">2</field>
+			<field name="price">89</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room11" model="hoteltrivago.rooms">
+			<field name="name">Room 11</field>
+			<field name="beds">2</field>
+			<field name="price">118</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room12" model="hoteltrivago.rooms">
+			<field name="name">Room 12</field>
+			<field name="beds">1</field>
+			<field name="price">34</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room13" model="hoteltrivago.rooms">
+			<field name="name">Room 13</field>
+			<field name="beds">3</field>
+			<field name="price">90</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room14" model="hoteltrivago.rooms">
+			<field name="name">Room 14</field>
+			<field name="beds">1</field>
+			<field name="price">54</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room15" model="hoteltrivago.rooms">
+			<field name="name">Room 15</field>
+			<field name="beds">3</field>
+			<field name="price">36</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room16" model="hoteltrivago.rooms">
+			<field name="name">Room 16</field>
+			<field name="beds">1</field>
+			<field name="price">114</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room17" model="hoteltrivago.rooms">
+			<field name="name">Room 17</field>
+			<field name="beds">2</field>
+			<field name="price">135</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room18" model="hoteltrivago.rooms">
+			<field name="name">Room 18</field>
+			<field name="beds">1</field>
+			<field name="price">123</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room19" model="hoteltrivago.rooms">
+			<field name="name">Room 19</field>
+			<field name="beds">1</field>
+			<field name="price">66</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room20" model="hoteltrivago.rooms">
+			<field name="name">Room 20</field>
+			<field name="beds">1</field>
+			<field name="price">103</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room21" model="hoteltrivago.rooms">
+			<field name="name">Room 21</field>
+			<field name="beds">3</field>
+			<field name="price">101</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room22" model="hoteltrivago.rooms">
+			<field name="name">Room 22</field>
+			<field name="beds">2</field>
+			<field name="price">35</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room23" model="hoteltrivago.rooms">
+			<field name="name">Room 23</field>
+			<field name="beds">3</field>
+			<field name="price">110</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room24" model="hoteltrivago.rooms">
+			<field name="name">Room 24</field>
+			<field name="beds">1</field>
+			<field name="price">55</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room25" model="hoteltrivago.rooms">
+			<field name="name">Room 25</field>
+			<field name="beds">1</field>
+			<field name="price">88</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room26" model="hoteltrivago.rooms">
+			<field name="name">Room 26</field>
+			<field name="beds">2</field>
+			<field name="price">71</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room27" model="hoteltrivago.rooms">
+			<field name="name">Room 27</field>
+			<field name="beds">2</field>
+			<field name="price">38</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room28" model="hoteltrivago.rooms">
+			<field name="name">Room 28</field>
+			<field name="beds">1</field>
+			<field name="price">61</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room29" model="hoteltrivago.rooms">
+			<field name="name">Room 29</field>
+			<field name="beds">3</field>
+			<field name="price">45</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room30" model="hoteltrivago.rooms">
+			<field name="name">Room 30</field>
+			<field name="beds">3</field>
+			<field name="price">130</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room31" model="hoteltrivago.rooms">
+			<field name="name">Room 31</field>
+			<field name="beds">2</field>
+			<field name="price">80</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room32" model="hoteltrivago.rooms">
+			<field name="name">Room 32</field>
+			<field name="beds">1</field>
+			<field name="price">93</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room33" model="hoteltrivago.rooms">
+			<field name="name">Room 33</field>
+			<field name="beds">1</field>
+			<field name="price">57</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room34" model="hoteltrivago.rooms">
+			<field name="name">Room 34</field>
+			<field name="beds">2</field>
+			<field name="price">103</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room35" model="hoteltrivago.rooms">
+			<field name="name">Room 35</field>
+			<field name="beds">2</field>
+			<field name="price">58</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room36" model="hoteltrivago.rooms">
+			<field name="name">Room 36</field>
+			<field name="beds">1</field>
+			<field name="price">126</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room37" model="hoteltrivago.rooms">
+			<field name="name">Room 37</field>
+			<field name="beds">1</field>
+			<field name="price">104</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room38" model="hoteltrivago.rooms">
+			<field name="name">Room 38</field>
+			<field name="beds">1</field>
+			<field name="price">46</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room39" model="hoteltrivago.rooms">
+			<field name="name">Room 39</field>
+			<field name="beds">3</field>
+			<field name="price">121</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room40" model="hoteltrivago.rooms">
+			<field name="name">Room 40</field>
+			<field name="beds">1</field>
+			<field name="price">40</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room41" model="hoteltrivago.rooms">
+			<field name="name">Room 41</field>
+			<field name="beds">2</field>
+			<field name="price">135</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room42" model="hoteltrivago.rooms">
+			<field name="name">Room 42</field>
+			<field name="beds">1</field>
+			<field name="price">136</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room43" model="hoteltrivago.rooms">
+			<field name="name">Room 43</field>
+			<field name="beds">1</field>
+			<field name="price">65</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room44" model="hoteltrivago.rooms">
+			<field name="name">Room 44</field>
+			<field name="beds">1</field>
+			<field name="price">98</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room45" model="hoteltrivago.rooms">
+			<field name="name">Room 45</field>
+			<field name="beds">3</field>
+			<field name="price">57</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room46" model="hoteltrivago.rooms">
+			<field name="name">Room 46</field>
+			<field name="beds">2</field>
+			<field name="price">142</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room47" model="hoteltrivago.rooms">
+			<field name="name">Room 47</field>
+			<field name="beds">2</field>
+			<field name="price">114</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room48" model="hoteltrivago.rooms">
+			<field name="name">Room 48</field>
+			<field name="beds">1</field>
+			<field name="price">48</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room49" model="hoteltrivago.rooms">
+			<field name="name">Room 49</field>
+			<field name="beds">1</field>
+			<field name="price">56</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room50" model="hoteltrivago.rooms">
+			<field name="name">Room 50</field>
+			<field name="beds">2</field>
+			<field name="price">138</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room51" model="hoteltrivago.rooms">
+			<field name="name">Room 51</field>
+			<field name="beds">2</field>
+			<field name="price">49</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room52" model="hoteltrivago.rooms">
+			<field name="name">Room 52</field>
+			<field name="beds">1</field>
+			<field name="price">77</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room53" model="hoteltrivago.rooms">
+			<field name="name">Room 53</field>
+			<field name="beds">1</field>
+			<field name="price">128</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room54" model="hoteltrivago.rooms">
+			<field name="name">Room 54</field>
+			<field name="beds">2</field>
+			<field name="price">96</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room55" model="hoteltrivago.rooms">
+			<field name="name">Room 55</field>
+			<field name="beds">2</field>
+			<field name="price">91</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room56" model="hoteltrivago.rooms">
+			<field name="name">Room 56</field>
+			<field name="beds">1</field>
+			<field name="price">52</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room57" model="hoteltrivago.rooms">
+			<field name="name">Room 57</field>
+			<field name="beds">3</field>
+			<field name="price">101</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room58" model="hoteltrivago.rooms">
+			<field name="name">Room 58</field>
+			<field name="beds">2</field>
+			<field name="price">84</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room59" model="hoteltrivago.rooms">
+			<field name="name">Room 59</field>
+			<field name="beds">1</field>
+			<field name="price">104</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room60" model="hoteltrivago.rooms">
+			<field name="name">Room 60</field>
+			<field name="beds">1</field>
+			<field name="price">67</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room61" model="hoteltrivago.rooms">
+			<field name="name">Room 61</field>
+			<field name="beds">1</field>
+			<field name="price">81</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room62" model="hoteltrivago.rooms">
+			<field name="name">Room 62</field>
+			<field name="beds">2</field>
+			<field name="price">46</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room63" model="hoteltrivago.rooms">
+			<field name="name">Room 63</field>
+			<field name="beds">2</field>
+			<field name="price">48</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room64" model="hoteltrivago.rooms">
+			<field name="name">Room 64</field>
+			<field name="beds">2</field>
+			<field name="price">100</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room65" model="hoteltrivago.rooms">
+			<field name="name">Room 65</field>
+			<field name="beds">3</field>
+			<field name="price">54</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room66" model="hoteltrivago.rooms">
+			<field name="name">Room 66</field>
+			<field name="beds">1</field>
+			<field name="price">71</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room67" model="hoteltrivago.rooms">
+			<field name="name">Room 67</field>
+			<field name="beds">3</field>
+			<field name="price">51</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room68" model="hoteltrivago.rooms">
+			<field name="name">Room 68</field>
+			<field name="beds">1</field>
+			<field name="price">42</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room69" model="hoteltrivago.rooms">
+			<field name="name">Room 69</field>
+			<field name="beds">2</field>
+			<field name="price">75</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room70" model="hoteltrivago.rooms">
+			<field name="name">Room 70</field>
+			<field name="beds">3</field>
+			<field name="price">35</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room71" model="hoteltrivago.rooms">
+			<field name="name">Room 71</field>
+			<field name="beds">2</field>
+			<field name="price">52</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room72" model="hoteltrivago.rooms">
+			<field name="name">Room 72</field>
+			<field name="beds">1</field>
+			<field name="price">142</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room73" model="hoteltrivago.rooms">
+			<field name="name">Room 73</field>
+			<field name="beds">3</field>
+			<field name="price">47</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room74" model="hoteltrivago.rooms">
+			<field name="name">Room 74</field>
+			<field name="beds">3</field>
+			<field name="price">71</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room75" model="hoteltrivago.rooms">
+			<field name="name">Room 75</field>
+			<field name="beds">3</field>
+			<field name="price">102</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room76" model="hoteltrivago.rooms">
+			<field name="name">Room 76</field>
+			<field name="beds">1</field>
+			<field name="price">91</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room77" model="hoteltrivago.rooms">
+			<field name="name">Room 77</field>
+			<field name="beds">3</field>
+			<field name="price">35</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room78" model="hoteltrivago.rooms">
+			<field name="name">Room 78</field>
+			<field name="beds">3</field>
+			<field name="price">56</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room79" model="hoteltrivago.rooms">
+			<field name="name">Room 79</field>
+			<field name="beds">3</field>
+			<field name="price">120</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room80" model="hoteltrivago.rooms">
+			<field name="name">Room 80</field>
+			<field name="beds">1</field>
+			<field name="price">47</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room81" model="hoteltrivago.rooms">
+			<field name="name">Room 81</field>
+			<field name="beds">3</field>
+			<field name="price">40</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room82" model="hoteltrivago.rooms">
+			<field name="name">Room 82</field>
+			<field name="beds">2</field>
+			<field name="price">143</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room83" model="hoteltrivago.rooms">
+			<field name="name">Room 83</field>
+			<field name="beds">1</field>
+			<field name="price">80</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room84" model="hoteltrivago.rooms">
+			<field name="name">Room 84</field>
+			<field name="beds">2</field>
+			<field name="price">63</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room85" model="hoteltrivago.rooms">
+			<field name="name">Room 85</field>
+			<field name="beds">1</field>
+			<field name="price">54</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room86" model="hoteltrivago.rooms">
+			<field name="name">Room 86</field>
+			<field name="beds">2</field>
+			<field name="price">39</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room87" model="hoteltrivago.rooms">
+			<field name="name">Room 87</field>
+			<field name="beds">3</field>
+			<field name="price">87</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room88" model="hoteltrivago.rooms">
+			<field name="name">Room 88</field>
+			<field name="beds">1</field>
+			<field name="price">50</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room89" model="hoteltrivago.rooms">
+			<field name="name">Room 89</field>
+			<field name="beds">2</field>
+			<field name="price">93</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room90" model="hoteltrivago.rooms">
+			<field name="name">Room 90</field>
+			<field name="beds">3</field>
+			<field name="price">71</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room91" model="hoteltrivago.rooms">
+			<field name="name">Room 91</field>
+			<field name="beds">3</field>
+			<field name="price">85</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room92" model="hoteltrivago.rooms">
+			<field name="name">Room 92</field>
+			<field name="beds">1</field>
+			<field name="price">71</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room93" model="hoteltrivago.rooms">
+			<field name="name">Room 93</field>
+			<field name="beds">3</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room94" model="hoteltrivago.rooms">
+			<field name="name">Room 94</field>
+			<field name="beds">3</field>
+			<field name="price">62</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room95" model="hoteltrivago.rooms">
+			<field name="name">Room 95</field>
+			<field name="beds">3</field>
+			<field name="price">52</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room96" model="hoteltrivago.rooms">
+			<field name="name">Room 96</field>
+			<field name="beds">2</field>
+			<field name="price">77</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room97" model="hoteltrivago.rooms">
+			<field name="name">Room 97</field>
+			<field name="beds">1</field>
+			<field name="price">43</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room98" model="hoteltrivago.rooms">
+			<field name="name">Room 98</field>
+			<field name="beds">3</field>
+			<field name="price">69</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room99" model="hoteltrivago.rooms">
+			<field name="name">Room 99</field>
+			<field name="beds">3</field>
+			<field name="price">69</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room100" model="hoteltrivago.rooms">
+			<field name="name">Room 100</field>
+			<field name="beds">2</field>
+			<field name="price">54</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room101" model="hoteltrivago.rooms">
+			<field name="name">Room 101</field>
+			<field name="beds">2</field>
+			<field name="price">79</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room102" model="hoteltrivago.rooms">
+			<field name="name">Room 102</field>
+			<field name="beds">3</field>
+			<field name="price">92</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room103" model="hoteltrivago.rooms">
+			<field name="name">Room 103</field>
+			<field name="beds">3</field>
+			<field name="price">46</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room104" model="hoteltrivago.rooms">
+			<field name="name">Room 104</field>
+			<field name="beds">1</field>
+			<field name="price">46</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room105" model="hoteltrivago.rooms">
+			<field name="name">Room 105</field>
+			<field name="beds">3</field>
+			<field name="price">35</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room106" model="hoteltrivago.rooms">
+			<field name="name">Room 106</field>
+			<field name="beds">1</field>
+			<field name="price">109</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room107" model="hoteltrivago.rooms">
+			<field name="name">Room 107</field>
+			<field name="beds">3</field>
+			<field name="price">71</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room108" model="hoteltrivago.rooms">
+			<field name="name">Room 108</field>
+			<field name="beds">2</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room109" model="hoteltrivago.rooms">
+			<field name="name">Room 109</field>
+			<field name="beds">3</field>
+			<field name="price">65</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room110" model="hoteltrivago.rooms">
+			<field name="name">Room 110</field>
+			<field name="beds">3</field>
+			<field name="price">58</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room111" model="hoteltrivago.rooms">
+			<field name="name">Room 111</field>
+			<field name="beds">3</field>
+			<field name="price">65</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room112" model="hoteltrivago.rooms">
+			<field name="name">Room 112</field>
+			<field name="beds">1</field>
+			<field name="price">97</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room113" model="hoteltrivago.rooms">
+			<field name="name">Room 113</field>
+			<field name="beds">1</field>
+			<field name="price">35</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room114" model="hoteltrivago.rooms">
+			<field name="name">Room 114</field>
+			<field name="beds">1</field>
+			<field name="price">48</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room115" model="hoteltrivago.rooms">
+			<field name="name">Room 115</field>
+			<field name="beds">3</field>
+			<field name="price">40</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room116" model="hoteltrivago.rooms">
+			<field name="name">Room 116</field>
+			<field name="beds">3</field>
+			<field name="price">45</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room117" model="hoteltrivago.rooms">
+			<field name="name">Room 117</field>
+			<field name="beds">2</field>
+			<field name="price">98</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room118" model="hoteltrivago.rooms">
+			<field name="name">Room 118</field>
+			<field name="beds">2</field>
+			<field name="price">64</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room119" model="hoteltrivago.rooms">
+			<field name="name">Room 119</field>
+			<field name="beds">2</field>
+			<field name="price">133</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room120" model="hoteltrivago.rooms">
+			<field name="name">Room 120</field>
+			<field name="beds">3</field>
+			<field name="price">65</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room121" model="hoteltrivago.rooms">
+			<field name="name">Room 121</field>
+			<field name="beds">3</field>
+			<field name="price">62</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room122" model="hoteltrivago.rooms">
+			<field name="name">Room 122</field>
+			<field name="beds">2</field>
+			<field name="price">103</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room123" model="hoteltrivago.rooms">
+			<field name="name">Room 123</field>
+			<field name="beds">3</field>
+			<field name="price">28</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room124" model="hoteltrivago.rooms">
+			<field name="name">Room 124</field>
+			<field name="beds">1</field>
+			<field name="price">81</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room125" model="hoteltrivago.rooms">
+			<field name="name">Room 125</field>
+			<field name="beds">2</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room126" model="hoteltrivago.rooms">
+			<field name="name">Room 126</field>
+			<field name="beds">3</field>
+			<field name="price">110</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room127" model="hoteltrivago.rooms">
+			<field name="name">Room 127</field>
+			<field name="beds">2</field>
+			<field name="price">128</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room128" model="hoteltrivago.rooms">
+			<field name="name">Room 128</field>
+			<field name="beds">2</field>
+			<field name="price">83</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room129" model="hoteltrivago.rooms">
+			<field name="name">Room 129</field>
+			<field name="beds">3</field>
+			<field name="price">119</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room130" model="hoteltrivago.rooms">
+			<field name="name">Room 130</field>
+			<field name="beds">1</field>
+			<field name="price">92</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room131" model="hoteltrivago.rooms">
+			<field name="name">Room 131</field>
+			<field name="beds">2</field>
+			<field name="price">75</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room132" model="hoteltrivago.rooms">
+			<field name="name">Room 132</field>
+			<field name="beds">3</field>
+			<field name="price">28</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room133" model="hoteltrivago.rooms">
+			<field name="name">Room 133</field>
+			<field name="beds">3</field>
+			<field name="price">61</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room134" model="hoteltrivago.rooms">
+			<field name="name">Room 134</field>
+			<field name="beds">2</field>
+			<field name="price">38</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room135" model="hoteltrivago.rooms">
+			<field name="name">Room 135</field>
+			<field name="beds">1</field>
+			<field name="price">127</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room136" model="hoteltrivago.rooms">
+			<field name="name">Room 136</field>
+			<field name="beds">3</field>
+			<field name="price">45</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room137" model="hoteltrivago.rooms">
+			<field name="name">Room 137</field>
+			<field name="beds">3</field>
+			<field name="price">61</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room138" model="hoteltrivago.rooms">
+			<field name="name">Room 138</field>
+			<field name="beds">1</field>
+			<field name="price">66</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room139" model="hoteltrivago.rooms">
+			<field name="name">Room 139</field>
+			<field name="beds">3</field>
+			<field name="price">98</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room140" model="hoteltrivago.rooms">
+			<field name="name">Room 140</field>
+			<field name="beds">2</field>
+			<field name="price">141</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room141" model="hoteltrivago.rooms">
+			<field name="name">Room 141</field>
+			<field name="beds">2</field>
+			<field name="price">65</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room142" model="hoteltrivago.rooms">
+			<field name="name">Room 142</field>
+			<field name="beds">2</field>
+			<field name="price">107</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room143" model="hoteltrivago.rooms">
+			<field name="name">Room 143</field>
+			<field name="beds">1</field>
+			<field name="price">39</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room144" model="hoteltrivago.rooms">
+			<field name="name">Room 144</field>
+			<field name="beds">3</field>
+			<field name="price">27</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room145" model="hoteltrivago.rooms">
+			<field name="name">Room 145</field>
+			<field name="beds">1</field>
+			<field name="price">76</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room146" model="hoteltrivago.rooms">
+			<field name="name">Room 146</field>
+			<field name="beds">3</field>
+			<field name="price">124</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room147" model="hoteltrivago.rooms">
+			<field name="name">Room 147</field>
+			<field name="beds">3</field>
+			<field name="price">39</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room148" model="hoteltrivago.rooms">
+			<field name="name">Room 148</field>
+			<field name="beds">3</field>
+			<field name="price">47</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room149" model="hoteltrivago.rooms">
+			<field name="name">Room 149</field>
+			<field name="beds">2</field>
+			<field name="price">59</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room150" model="hoteltrivago.rooms">
+			<field name="name">Room 150</field>
+			<field name="beds">3</field>
+			<field name="price">65</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room151" model="hoteltrivago.rooms">
+			<field name="name">Room 151</field>
+			<field name="beds">1</field>
+			<field name="price">50</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room152" model="hoteltrivago.rooms">
+			<field name="name">Room 152</field>
+			<field name="beds">1</field>
+			<field name="price">99</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room153" model="hoteltrivago.rooms">
+			<field name="name">Room 153</field>
+			<field name="beds">3</field>
+			<field name="price">113</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room154" model="hoteltrivago.rooms">
+			<field name="name">Room 154</field>
+			<field name="beds">2</field>
+			<field name="price">25</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room155" model="hoteltrivago.rooms">
+			<field name="name">Room 155</field>
+			<field name="beds">2</field>
+			<field name="price">71</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room156" model="hoteltrivago.rooms">
+			<field name="name">Room 156</field>
+			<field name="beds">2</field>
+			<field name="price">76</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room157" model="hoteltrivago.rooms">
+			<field name="name">Room 157</field>
+			<field name="beds">3</field>
+			<field name="price">96</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room158" model="hoteltrivago.rooms">
+			<field name="name">Room 158</field>
+			<field name="beds">2</field>
+			<field name="price">141</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room159" model="hoteltrivago.rooms">
+			<field name="name">Room 159</field>
+			<field name="beds">3</field>
+			<field name="price">33</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room160" model="hoteltrivago.rooms">
+			<field name="name">Room 160</field>
+			<field name="beds">2</field>
+			<field name="price">109</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room161" model="hoteltrivago.rooms">
+			<field name="name">Room 161</field>
+			<field name="beds">1</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room162" model="hoteltrivago.rooms">
+			<field name="name">Room 162</field>
+			<field name="beds">1</field>
+			<field name="price">37</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room163" model="hoteltrivago.rooms">
+			<field name="name">Room 163</field>
+			<field name="beds">3</field>
+			<field name="price">114</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room164" model="hoteltrivago.rooms">
+			<field name="name">Room 164</field>
+			<field name="beds">2</field>
+			<field name="price">61</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room165" model="hoteltrivago.rooms">
+			<field name="name">Room 165</field>
+			<field name="beds">1</field>
+			<field name="price">35</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room166" model="hoteltrivago.rooms">
+			<field name="name">Room 166</field>
+			<field name="beds">2</field>
+			<field name="price">49</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room167" model="hoteltrivago.rooms">
+			<field name="name">Room 167</field>
+			<field name="beds">2</field>
+			<field name="price">101</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room168" model="hoteltrivago.rooms">
+			<field name="name">Room 168</field>
+			<field name="beds">1</field>
+			<field name="price">103</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room169" model="hoteltrivago.rooms">
+			<field name="name">Room 169</field>
+			<field name="beds">2</field>
+			<field name="price">48</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room170" model="hoteltrivago.rooms">
+			<field name="name">Room 170</field>
+			<field name="beds">3</field>
+			<field name="price">144</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room171" model="hoteltrivago.rooms">
+			<field name="name">Room 171</field>
+			<field name="beds">3</field>
+			<field name="price">41</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room172" model="hoteltrivago.rooms">
+			<field name="name">Room 172</field>
+			<field name="beds">2</field>
+			<field name="price">101</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room173" model="hoteltrivago.rooms">
+			<field name="name">Room 173</field>
+			<field name="beds">3</field>
+			<field name="price">95</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room174" model="hoteltrivago.rooms">
+			<field name="name">Room 174</field>
+			<field name="beds">1</field>
+			<field name="price">58</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room175" model="hoteltrivago.rooms">
+			<field name="name">Room 175</field>
+			<field name="beds">2</field>
+			<field name="price">56</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room176" model="hoteltrivago.rooms">
+			<field name="name">Room 176</field>
+			<field name="beds">1</field>
+			<field name="price">100</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room177" model="hoteltrivago.rooms">
+			<field name="name">Room 177</field>
+			<field name="beds">1</field>
+			<field name="price">105</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room178" model="hoteltrivago.rooms">
+			<field name="name">Room 178</field>
+			<field name="beds">2</field>
+			<field name="price">93</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room179" model="hoteltrivago.rooms">
+			<field name="name">Room 179</field>
+			<field name="beds">1</field>
+			<field name="price">91</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room180" model="hoteltrivago.rooms">
+			<field name="name">Room 180</field>
+			<field name="beds">1</field>
+			<field name="price">73</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room181" model="hoteltrivago.rooms">
+			<field name="name">Room 181</field>
+			<field name="beds">3</field>
+			<field name="price">59</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room182" model="hoteltrivago.rooms">
+			<field name="name">Room 182</field>
+			<field name="beds">1</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room183" model="hoteltrivago.rooms">
+			<field name="name">Room 183</field>
+			<field name="beds">1</field>
+			<field name="price">26</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room184" model="hoteltrivago.rooms">
+			<field name="name">Room 184</field>
+			<field name="beds">2</field>
+			<field name="price">83</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room185" model="hoteltrivago.rooms">
+			<field name="name">Room 185</field>
+			<field name="beds">2</field>
+			<field name="price">121</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room186" model="hoteltrivago.rooms">
+			<field name="name">Room 186</field>
+			<field name="beds">2</field>
+			<field name="price">51</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room187" model="hoteltrivago.rooms">
+			<field name="name">Room 187</field>
+			<field name="beds">2</field>
+			<field name="price">68</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room188" model="hoteltrivago.rooms">
+			<field name="name">Room 188</field>
+			<field name="beds">1</field>
+			<field name="price">65</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room189" model="hoteltrivago.rooms">
+			<field name="name">Room 189</field>
+			<field name="beds">2</field>
+			<field name="price">95</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room190" model="hoteltrivago.rooms">
+			<field name="name">Room 190</field>
+			<field name="beds">2</field>
+			<field name="price">65</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room191" model="hoteltrivago.rooms">
+			<field name="name">Room 191</field>
+			<field name="beds">3</field>
+			<field name="price">68</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room192" model="hoteltrivago.rooms">
+			<field name="name">Room 192</field>
+			<field name="beds">1</field>
+			<field name="price">50</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room193" model="hoteltrivago.rooms">
+			<field name="name">Room 193</field>
+			<field name="beds">2</field>
+			<field name="price">134</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room194" model="hoteltrivago.rooms">
+			<field name="name">Room 194</field>
+			<field name="beds">1</field>
+			<field name="price">84</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room195" model="hoteltrivago.rooms">
+			<field name="name">Room 195</field>
+			<field name="beds">3</field>
+			<field name="price">139</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room196" model="hoteltrivago.rooms">
+			<field name="name">Room 196</field>
+			<field name="beds">2</field>
+			<field name="price">86</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room197" model="hoteltrivago.rooms">
+			<field name="name">Room 197</field>
+			<field name="beds">2</field>
+			<field name="price">141</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room198" model="hoteltrivago.rooms">
+			<field name="name">Room 198</field>
+			<field name="beds">2</field>
+			<field name="price">96</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room199" model="hoteltrivago.rooms">
+			<field name="name">Room 199</field>
+			<field name="beds">1</field>
+			<field name="price">81</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room200" model="hoteltrivago.rooms">
+			<field name="name">Room 200</field>
+			<field name="beds">3</field>
+			<field name="price">54</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room201" model="hoteltrivago.rooms">
+			<field name="name">Room 201</field>
+			<field name="beds">1</field>
+			<field name="price">134</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room202" model="hoteltrivago.rooms">
+			<field name="name">Room 202</field>
+			<field name="beds">2</field>
+			<field name="price">91</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room203" model="hoteltrivago.rooms">
+			<field name="name">Room 203</field>
+			<field name="beds">2</field>
+			<field name="price">144</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room204" model="hoteltrivago.rooms">
+			<field name="name">Room 204</field>
+			<field name="beds">1</field>
+			<field name="price">46</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room205" model="hoteltrivago.rooms">
+			<field name="name">Room 205</field>
+			<field name="beds">3</field>
+			<field name="price">136</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room206" model="hoteltrivago.rooms">
+			<field name="name">Room 206</field>
+			<field name="beds">2</field>
+			<field name="price">60</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room207" model="hoteltrivago.rooms">
+			<field name="name">Room 207</field>
+			<field name="beds">1</field>
+			<field name="price">131</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room208" model="hoteltrivago.rooms">
+			<field name="name">Room 208</field>
+			<field name="beds">3</field>
+			<field name="price">139</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room209" model="hoteltrivago.rooms">
+			<field name="name">Room 209</field>
+			<field name="beds">2</field>
+			<field name="price">86</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room210" model="hoteltrivago.rooms">
+			<field name="name">Room 210</field>
+			<field name="beds">3</field>
+			<field name="price">132</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room211" model="hoteltrivago.rooms">
+			<field name="name">Room 211</field>
+			<field name="beds">3</field>
+			<field name="price">125</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room212" model="hoteltrivago.rooms">
+			<field name="name">Room 212</field>
+			<field name="beds">1</field>
+			<field name="price">126</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room213" model="hoteltrivago.rooms">
+			<field name="name">Room 213</field>
+			<field name="beds">2</field>
+			<field name="price">103</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room214" model="hoteltrivago.rooms">
+			<field name="name">Room 214</field>
+			<field name="beds">1</field>
+			<field name="price">28</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room215" model="hoteltrivago.rooms">
+			<field name="name">Room 215</field>
+			<field name="beds">2</field>
+			<field name="price">40</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room216" model="hoteltrivago.rooms">
+			<field name="name">Room 216</field>
+			<field name="beds">1</field>
+			<field name="price">39</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room217" model="hoteltrivago.rooms">
+			<field name="name">Room 217</field>
+			<field name="beds">1</field>
+			<field name="price">56</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room218" model="hoteltrivago.rooms">
+			<field name="name">Room 218</field>
+			<field name="beds">3</field>
+			<field name="price">114</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room219" model="hoteltrivago.rooms">
+			<field name="name">Room 219</field>
+			<field name="beds">3</field>
+			<field name="price">74</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room220" model="hoteltrivago.rooms">
+			<field name="name">Room 220</field>
+			<field name="beds">2</field>
+			<field name="price">124</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room221" model="hoteltrivago.rooms">
+			<field name="name">Room 221</field>
+			<field name="beds">3</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room222" model="hoteltrivago.rooms">
+			<field name="name">Room 222</field>
+			<field name="beds">3</field>
+			<field name="price">106</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room223" model="hoteltrivago.rooms">
+			<field name="name">Room 223</field>
+			<field name="beds">2</field>
+			<field name="price">75</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room224" model="hoteltrivago.rooms">
+			<field name="name">Room 224</field>
+			<field name="beds">3</field>
+			<field name="price">54</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room225" model="hoteltrivago.rooms">
+			<field name="name">Room 225</field>
+			<field name="beds">2</field>
+			<field name="price">82</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room226" model="hoteltrivago.rooms">
+			<field name="name">Room 226</field>
+			<field name="beds">1</field>
+			<field name="price">129</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room227" model="hoteltrivago.rooms">
+			<field name="name">Room 227</field>
+			<field name="beds">1</field>
+			<field name="price">143</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room228" model="hoteltrivago.rooms">
+			<field name="name">Room 228</field>
+			<field name="beds">3</field>
+			<field name="price">99</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room229" model="hoteltrivago.rooms">
+			<field name="name">Room 229</field>
+			<field name="beds">3</field>
+			<field name="price">36</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room230" model="hoteltrivago.rooms">
+			<field name="name">Room 230</field>
+			<field name="beds">1</field>
+			<field name="price">59</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room231" model="hoteltrivago.rooms">
+			<field name="name">Room 231</field>
+			<field name="beds">3</field>
+			<field name="price">86</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room232" model="hoteltrivago.rooms">
+			<field name="name">Room 232</field>
+			<field name="beds">2</field>
+			<field name="price">65</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room233" model="hoteltrivago.rooms">
+			<field name="name">Room 233</field>
+			<field name="beds">2</field>
+			<field name="price">44</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room234" model="hoteltrivago.rooms">
+			<field name="name">Room 234</field>
+			<field name="beds">3</field>
+			<field name="price">117</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room235" model="hoteltrivago.rooms">
+			<field name="name">Room 235</field>
+			<field name="beds">3</field>
+			<field name="price">36</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room236" model="hoteltrivago.rooms">
+			<field name="name">Room 236</field>
+			<field name="beds">3</field>
+			<field name="price">41</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room237" model="hoteltrivago.rooms">
+			<field name="name">Room 237</field>
+			<field name="beds">1</field>
+			<field name="price">37</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room238" model="hoteltrivago.rooms">
+			<field name="name">Room 238</field>
+			<field name="beds">1</field>
+			<field name="price">50</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room239" model="hoteltrivago.rooms">
+			<field name="name">Room 239</field>
+			<field name="beds">2</field>
+			<field name="price">79</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room240" model="hoteltrivago.rooms">
+			<field name="name">Room 240</field>
+			<field name="beds">2</field>
+			<field name="price">110</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room241" model="hoteltrivago.rooms">
+			<field name="name">Room 241</field>
+			<field name="beds">3</field>
+			<field name="price">124</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room242" model="hoteltrivago.rooms">
+			<field name="name">Room 242</field>
+			<field name="beds">1</field>
+			<field name="price">26</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room243" model="hoteltrivago.rooms">
+			<field name="name">Room 243</field>
+			<field name="beds">2</field>
+			<field name="price">29</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room244" model="hoteltrivago.rooms">
+			<field name="name">Room 244</field>
+			<field name="beds">2</field>
+			<field name="price">89</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room245" model="hoteltrivago.rooms">
+			<field name="name">Room 245</field>
+			<field name="beds">1</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room246" model="hoteltrivago.rooms">
+			<field name="name">Room 246</field>
+			<field name="beds">3</field>
+			<field name="price">43</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room247" model="hoteltrivago.rooms">
+			<field name="name">Room 247</field>
+			<field name="beds">2</field>
+			<field name="price">134</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room248" model="hoteltrivago.rooms">
+			<field name="name">Room 248</field>
+			<field name="beds">2</field>
+			<field name="price">80</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room249" model="hoteltrivago.rooms">
+			<field name="name">Room 249</field>
+			<field name="beds">2</field>
+			<field name="price">59</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room250" model="hoteltrivago.rooms">
+			<field name="name">Room 250</field>
+			<field name="beds">3</field>
+			<field name="price">125</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room251" model="hoteltrivago.rooms">
+			<field name="name">Room 251</field>
+			<field name="beds">1</field>
+			<field name="price">108</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room252" model="hoteltrivago.rooms">
+			<field name="name">Room 252</field>
+			<field name="beds">1</field>
+			<field name="price">57</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room253" model="hoteltrivago.rooms">
+			<field name="name">Room 253</field>
+			<field name="beds">3</field>
+			<field name="price">75</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room254" model="hoteltrivago.rooms">
+			<field name="name">Room 254</field>
+			<field name="beds">1</field>
+			<field name="price">105</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room255" model="hoteltrivago.rooms">
+			<field name="name">Room 255</field>
+			<field name="beds">1</field>
+			<field name="price">91</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room256" model="hoteltrivago.rooms">
+			<field name="name">Room 256</field>
+			<field name="beds">3</field>
+			<field name="price">93</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room257" model="hoteltrivago.rooms">
+			<field name="name">Room 257</field>
+			<field name="beds">3</field>
+			<field name="price">134</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room258" model="hoteltrivago.rooms">
+			<field name="name">Room 258</field>
+			<field name="beds">2</field>
+			<field name="price">45</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room259" model="hoteltrivago.rooms">
+			<field name="name">Room 259</field>
+			<field name="beds">1</field>
+			<field name="price">111</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room260" model="hoteltrivago.rooms">
+			<field name="name">Room 260</field>
+			<field name="beds">3</field>
+			<field name="price">140</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room261" model="hoteltrivago.rooms">
+			<field name="name">Room 261</field>
+			<field name="beds">3</field>
+			<field name="price">45</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room262" model="hoteltrivago.rooms">
+			<field name="name">Room 262</field>
+			<field name="beds">1</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room263" model="hoteltrivago.rooms">
+			<field name="name">Room 263</field>
+			<field name="beds">1</field>
+			<field name="price">122</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room264" model="hoteltrivago.rooms">
+			<field name="name">Room 264</field>
+			<field name="beds">3</field>
+			<field name="price">115</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room265" model="hoteltrivago.rooms">
+			<field name="name">Room 265</field>
+			<field name="beds">1</field>
+			<field name="price">61</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room266" model="hoteltrivago.rooms">
+			<field name="name">Room 266</field>
+			<field name="beds">3</field>
+			<field name="price">85</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room267" model="hoteltrivago.rooms">
+			<field name="name">Room 267</field>
+			<field name="beds">3</field>
+			<field name="price">58</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room268" model="hoteltrivago.rooms">
+			<field name="name">Room 268</field>
+			<field name="beds">3</field>
+			<field name="price">33</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room269" model="hoteltrivago.rooms">
+			<field name="name">Room 269</field>
+			<field name="beds">2</field>
+			<field name="price">67</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room270" model="hoteltrivago.rooms">
+			<field name="name">Room 270</field>
+			<field name="beds">2</field>
+			<field name="price">37</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room271" model="hoteltrivago.rooms">
+			<field name="name">Room 271</field>
+			<field name="beds">1</field>
+			<field name="price">47</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room272" model="hoteltrivago.rooms">
+			<field name="name">Room 272</field>
+			<field name="beds">2</field>
+			<field name="price">30</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room273" model="hoteltrivago.rooms">
+			<field name="name">Room 273</field>
+			<field name="beds">2</field>
+			<field name="price">36</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room274" model="hoteltrivago.rooms">
+			<field name="name">Room 274</field>
+			<field name="beds">1</field>
+			<field name="price">85</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room275" model="hoteltrivago.rooms">
+			<field name="name">Room 275</field>
+			<field name="beds">2</field>
+			<field name="price">92</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room276" model="hoteltrivago.rooms">
+			<field name="name">Room 276</field>
+			<field name="beds">2</field>
+			<field name="price">121</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room277" model="hoteltrivago.rooms">
+			<field name="name">Room 277</field>
+			<field name="beds">1</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room278" model="hoteltrivago.rooms">
+			<field name="name">Room 278</field>
+			<field name="beds">2</field>
+			<field name="price">51</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room279" model="hoteltrivago.rooms">
+			<field name="name">Room 279</field>
+			<field name="beds">3</field>
+			<field name="price">108</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room280" model="hoteltrivago.rooms">
+			<field name="name">Room 280</field>
+			<field name="beds">3</field>
+			<field name="price">93</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room281" model="hoteltrivago.rooms">
+			<field name="name">Room 281</field>
+			<field name="beds">2</field>
+			<field name="price">89</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room282" model="hoteltrivago.rooms">
+			<field name="name">Room 282</field>
+			<field name="beds">3</field>
+			<field name="price">143</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room283" model="hoteltrivago.rooms">
+			<field name="name">Room 283</field>
+			<field name="beds">3</field>
+			<field name="price">134</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room284" model="hoteltrivago.rooms">
+			<field name="name">Room 284</field>
+			<field name="beds">3</field>
+			<field name="price">53</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room285" model="hoteltrivago.rooms">
+			<field name="name">Room 285</field>
+			<field name="beds">2</field>
+			<field name="price">127</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room286" model="hoteltrivago.rooms">
+			<field name="name">Room 286</field>
+			<field name="beds">3</field>
+			<field name="price">99</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room287" model="hoteltrivago.rooms">
+			<field name="name">Room 287</field>
+			<field name="beds">1</field>
+			<field name="price">39</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room288" model="hoteltrivago.rooms">
+			<field name="name">Room 288</field>
+			<field name="beds">1</field>
+			<field name="price">96</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room289" model="hoteltrivago.rooms">
+			<field name="name">Room 289</field>
+			<field name="beds">1</field>
+			<field name="price">65</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room290" model="hoteltrivago.rooms">
+			<field name="name">Room 290</field>
+			<field name="beds">2</field>
+			<field name="price">129</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room291" model="hoteltrivago.rooms">
+			<field name="name">Room 291</field>
+			<field name="beds">3</field>
+			<field name="price">42</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room292" model="hoteltrivago.rooms">
+			<field name="name">Room 292</field>
+			<field name="beds">3</field>
+			<field name="price">75</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room293" model="hoteltrivago.rooms">
+			<field name="name">Room 293</field>
+			<field name="beds">3</field>
+			<field name="price">53</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room294" model="hoteltrivago.rooms">
+			<field name="name">Room 294</field>
+			<field name="beds">3</field>
+			<field name="price">129</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room295" model="hoteltrivago.rooms">
+			<field name="name">Room 295</field>
+			<field name="beds">1</field>
+			<field name="price">98</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room296" model="hoteltrivago.rooms">
+			<field name="name">Room 296</field>
+			<field name="beds">1</field>
+			<field name="price">113</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room297" model="hoteltrivago.rooms">
+			<field name="name">Room 297</field>
+			<field name="beds">1</field>
+			<field name="price">102</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room298" model="hoteltrivago.rooms">
+			<field name="name">Room 298</field>
+			<field name="beds">1</field>
+			<field name="price">37</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room299" model="hoteltrivago.rooms">
+			<field name="name">Room 299</field>
+			<field name="beds">1</field>
+			<field name="price">129</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room300" model="hoteltrivago.rooms">
+			<field name="name">Room 300</field>
+			<field name="beds">3</field>
+			<field name="price">134</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room301" model="hoteltrivago.rooms">
+			<field name="name">Room 301</field>
+			<field name="beds">2</field>
+			<field name="price">94</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room302" model="hoteltrivago.rooms">
+			<field name="name">Room 302</field>
+			<field name="beds">2</field>
+			<field name="price">125</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room303" model="hoteltrivago.rooms">
+			<field name="name">Room 303</field>
+			<field name="beds">1</field>
+			<field name="price">137</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room304" model="hoteltrivago.rooms">
+			<field name="name">Room 304</field>
+			<field name="beds">1</field>
+			<field name="price">85</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room305" model="hoteltrivago.rooms">
+			<field name="name">Room 305</field>
+			<field name="beds">1</field>
+			<field name="price">63</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room306" model="hoteltrivago.rooms">
+			<field name="name">Room 306</field>
+			<field name="beds">2</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room307" model="hoteltrivago.rooms">
+			<field name="name">Room 307</field>
+			<field name="beds">1</field>
+			<field name="price">51</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room308" model="hoteltrivago.rooms">
+			<field name="name">Room 308</field>
+			<field name="beds">1</field>
+			<field name="price">131</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room309" model="hoteltrivago.rooms">
+			<field name="name">Room 309</field>
+			<field name="beds">1</field>
+			<field name="price">29</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room310" model="hoteltrivago.rooms">
+			<field name="name">Room 310</field>
+			<field name="beds">1</field>
+			<field name="price">135</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room311" model="hoteltrivago.rooms">
+			<field name="name">Room 311</field>
+			<field name="beds">3</field>
+			<field name="price">141</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room312" model="hoteltrivago.rooms">
+			<field name="name">Room 312</field>
+			<field name="beds">1</field>
+			<field name="price">140</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room313" model="hoteltrivago.rooms">
+			<field name="name">Room 313</field>
+			<field name="beds">2</field>
+			<field name="price">56</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room314" model="hoteltrivago.rooms">
+			<field name="name">Room 314</field>
+			<field name="beds">1</field>
+			<field name="price">43</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room315" model="hoteltrivago.rooms">
+			<field name="name">Room 315</field>
+			<field name="beds">2</field>
+			<field name="price">60</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room316" model="hoteltrivago.rooms">
+			<field name="name">Room 316</field>
+			<field name="beds">3</field>
+			<field name="price">70</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room317" model="hoteltrivago.rooms">
+			<field name="name">Room 317</field>
+			<field name="beds">3</field>
+			<field name="price">40</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room318" model="hoteltrivago.rooms">
+			<field name="name">Room 318</field>
+			<field name="beds">3</field>
+			<field name="price">53</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room319" model="hoteltrivago.rooms">
+			<field name="name">Room 319</field>
+			<field name="beds">2</field>
+			<field name="price">85</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room320" model="hoteltrivago.rooms">
+			<field name="name">Room 320</field>
+			<field name="beds">1</field>
+			<field name="price">135</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room321" model="hoteltrivago.rooms">
+			<field name="name">Room 321</field>
+			<field name="beds">1</field>
+			<field name="price">99</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room322" model="hoteltrivago.rooms">
+			<field name="name">Room 322</field>
+			<field name="beds">3</field>
+			<field name="price">47</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room323" model="hoteltrivago.rooms">
+			<field name="name">Room 323</field>
+			<field name="beds">3</field>
+			<field name="price">34</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room324" model="hoteltrivago.rooms">
+			<field name="name">Room 324</field>
+			<field name="beds">1</field>
+			<field name="price">53</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room325" model="hoteltrivago.rooms">
+			<field name="name">Room 325</field>
+			<field name="beds">3</field>
+			<field name="price">93</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room326" model="hoteltrivago.rooms">
+			<field name="name">Room 326</field>
+			<field name="beds">3</field>
+			<field name="price">44</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room327" model="hoteltrivago.rooms">
+			<field name="name">Room 327</field>
+			<field name="beds">1</field>
+			<field name="price">54</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room328" model="hoteltrivago.rooms">
+			<field name="name">Room 328</field>
+			<field name="beds">1</field>
+			<field name="price">25</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room329" model="hoteltrivago.rooms">
+			<field name="name">Room 329</field>
+			<field name="beds">3</field>
+			<field name="price">65</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room330" model="hoteltrivago.rooms">
+			<field name="name">Room 330</field>
+			<field name="beds">1</field>
+			<field name="price">78</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room331" model="hoteltrivago.rooms">
+			<field name="name">Room 331</field>
+			<field name="beds">3</field>
+			<field name="price">43</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room332" model="hoteltrivago.rooms">
+			<field name="name">Room 332</field>
+			<field name="beds">3</field>
+			<field name="price">35</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room333" model="hoteltrivago.rooms">
+			<field name="name">Room 333</field>
+			<field name="beds">1</field>
+			<field name="price">45</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room334" model="hoteltrivago.rooms">
+			<field name="name">Room 334</field>
+			<field name="beds">2</field>
+			<field name="price">124</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room335" model="hoteltrivago.rooms">
+			<field name="name">Room 335</field>
+			<field name="beds">2</field>
+			<field name="price">76</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room336" model="hoteltrivago.rooms">
+			<field name="name">Room 336</field>
+			<field name="beds">2</field>
+			<field name="price">79</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room337" model="hoteltrivago.rooms">
+			<field name="name">Room 337</field>
+			<field name="beds">1</field>
+			<field name="price">135</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room338" model="hoteltrivago.rooms">
+			<field name="name">Room 338</field>
+			<field name="beds">1</field>
+			<field name="price">125</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room339" model="hoteltrivago.rooms">
+			<field name="name">Room 339</field>
+			<field name="beds">3</field>
+			<field name="price">47</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room340" model="hoteltrivago.rooms">
+			<field name="name">Room 340</field>
+			<field name="beds">3</field>
+			<field name="price">137</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room341" model="hoteltrivago.rooms">
+			<field name="name">Room 341</field>
+			<field name="beds">2</field>
+			<field name="price">141</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room342" model="hoteltrivago.rooms">
+			<field name="name">Room 342</field>
+			<field name="beds">2</field>
+			<field name="price">83</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room343" model="hoteltrivago.rooms">
+			<field name="name">Room 343</field>
+			<field name="beds">1</field>
+			<field name="price">72</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room344" model="hoteltrivago.rooms">
+			<field name="name">Room 344</field>
+			<field name="beds">2</field>
+			<field name="price">105</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room345" model="hoteltrivago.rooms">
+			<field name="name">Room 345</field>
+			<field name="beds">1</field>
+			<field name="price">110</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room346" model="hoteltrivago.rooms">
+			<field name="name">Room 346</field>
+			<field name="beds">1</field>
+			<field name="price">82</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room347" model="hoteltrivago.rooms">
+			<field name="name">Room 347</field>
+			<field name="beds">3</field>
+			<field name="price">26</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room348" model="hoteltrivago.rooms">
+			<field name="name">Room 348</field>
+			<field name="beds">1</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room349" model="hoteltrivago.rooms">
+			<field name="name">Room 349</field>
+			<field name="beds">1</field>
+			<field name="price">129</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room350" model="hoteltrivago.rooms">
+			<field name="name">Room 350</field>
+			<field name="beds">3</field>
+			<field name="price">106</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room351" model="hoteltrivago.rooms">
+			<field name="name">Room 351</field>
+			<field name="beds">2</field>
+			<field name="price">70</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room352" model="hoteltrivago.rooms">
+			<field name="name">Room 352</field>
+			<field name="beds">2</field>
+			<field name="price">111</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room353" model="hoteltrivago.rooms">
+			<field name="name">Room 353</field>
+			<field name="beds">1</field>
+			<field name="price">120</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room354" model="hoteltrivago.rooms">
+			<field name="name">Room 354</field>
+			<field name="beds">1</field>
+			<field name="price">139</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room355" model="hoteltrivago.rooms">
+			<field name="name">Room 355</field>
+			<field name="beds">3</field>
+			<field name="price">66</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room356" model="hoteltrivago.rooms">
+			<field name="name">Room 356</field>
+			<field name="beds">3</field>
+			<field name="price">85</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room357" model="hoteltrivago.rooms">
+			<field name="name">Room 357</field>
+			<field name="beds">3</field>
+			<field name="price">28</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room358" model="hoteltrivago.rooms">
+			<field name="name">Room 358</field>
+			<field name="beds">3</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room359" model="hoteltrivago.rooms">
+			<field name="name">Room 359</field>
+			<field name="beds">1</field>
+			<field name="price">59</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room360" model="hoteltrivago.rooms">
+			<field name="name">Room 360</field>
+			<field name="beds">2</field>
+			<field name="price">28</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room361" model="hoteltrivago.rooms">
+			<field name="name">Room 361</field>
+			<field name="beds">2</field>
+			<field name="price">35</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room362" model="hoteltrivago.rooms">
+			<field name="name">Room 362</field>
+			<field name="beds">1</field>
+			<field name="price">83</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room363" model="hoteltrivago.rooms">
+			<field name="name">Room 363</field>
+			<field name="beds">1</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room364" model="hoteltrivago.rooms">
+			<field name="name">Room 364</field>
+			<field name="beds">2</field>
+			<field name="price">112</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room365" model="hoteltrivago.rooms">
+			<field name="name">Room 365</field>
+			<field name="beds">3</field>
+			<field name="price">34</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room366" model="hoteltrivago.rooms">
+			<field name="name">Room 366</field>
+			<field name="beds">2</field>
+			<field name="price">69</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room367" model="hoteltrivago.rooms">
+			<field name="name">Room 367</field>
+			<field name="beds">1</field>
+			<field name="price">31</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room368" model="hoteltrivago.rooms">
+			<field name="name">Room 368</field>
+			<field name="beds">3</field>
+			<field name="price">128</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room369" model="hoteltrivago.rooms">
+			<field name="name">Room 369</field>
+			<field name="beds">3</field>
+			<field name="price">79</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room370" model="hoteltrivago.rooms">
+			<field name="name">Room 370</field>
+			<field name="beds">1</field>
+			<field name="price">67</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room371" model="hoteltrivago.rooms">
+			<field name="name">Room 371</field>
+			<field name="beds">2</field>
+			<field name="price">106</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room372" model="hoteltrivago.rooms">
+			<field name="name">Room 372</field>
+			<field name="beds">2</field>
+			<field name="price">86</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room373" model="hoteltrivago.rooms">
+			<field name="name">Room 373</field>
+			<field name="beds">2</field>
+			<field name="price">124</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room374" model="hoteltrivago.rooms">
+			<field name="name">Room 374</field>
+			<field name="beds">2</field>
+			<field name="price">78</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room375" model="hoteltrivago.rooms">
+			<field name="name">Room 375</field>
+			<field name="beds">1</field>
+			<field name="price">92</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room376" model="hoteltrivago.rooms">
+			<field name="name">Room 376</field>
+			<field name="beds">2</field>
+			<field name="price">78</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room377" model="hoteltrivago.rooms">
+			<field name="name">Room 377</field>
+			<field name="beds">2</field>
+			<field name="price">34</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room378" model="hoteltrivago.rooms">
+			<field name="name">Room 378</field>
+			<field name="beds">3</field>
+			<field name="price">64</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room379" model="hoteltrivago.rooms">
+			<field name="name">Room 379</field>
+			<field name="beds">1</field>
+			<field name="price">100</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room380" model="hoteltrivago.rooms">
+			<field name="name">Room 380</field>
+			<field name="beds">3</field>
+			<field name="price">50</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room381" model="hoteltrivago.rooms">
+			<field name="name">Room 381</field>
+			<field name="beds">3</field>
+			<field name="price">133</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room382" model="hoteltrivago.rooms">
+			<field name="name">Room 382</field>
+			<field name="beds">2</field>
+			<field name="price">40</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room383" model="hoteltrivago.rooms">
+			<field name="name">Room 383</field>
+			<field name="beds">2</field>
+			<field name="price">64</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room384" model="hoteltrivago.rooms">
+			<field name="name">Room 384</field>
+			<field name="beds">2</field>
+			<field name="price">56</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room385" model="hoteltrivago.rooms">
+			<field name="name">Room 385</field>
+			<field name="beds">2</field>
+			<field name="price">136</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room386" model="hoteltrivago.rooms">
+			<field name="name">Room 386</field>
+			<field name="beds">1</field>
+			<field name="price">97</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room387" model="hoteltrivago.rooms">
+			<field name="name">Room 387</field>
+			<field name="beds">1</field>
+			<field name="price">98</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room388" model="hoteltrivago.rooms">
+			<field name="name">Room 388</field>
+			<field name="beds">1</field>
+			<field name="price">49</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room389" model="hoteltrivago.rooms">
+			<field name="name">Room 389</field>
+			<field name="beds">3</field>
+			<field name="price">116</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room390" model="hoteltrivago.rooms">
+			<field name="name">Room 390</field>
+			<field name="beds">3</field>
+			<field name="price">30</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room391" model="hoteltrivago.rooms">
+			<field name="name">Room 391</field>
+			<field name="beds">2</field>
+			<field name="price">60</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room392" model="hoteltrivago.rooms">
+			<field name="name">Room 392</field>
+			<field name="beds">3</field>
+			<field name="price">91</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room393" model="hoteltrivago.rooms">
+			<field name="name">Room 393</field>
+			<field name="beds">3</field>
+			<field name="price">129</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room394" model="hoteltrivago.rooms">
+			<field name="name">Room 394</field>
+			<field name="beds">1</field>
+			<field name="price">105</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room395" model="hoteltrivago.rooms">
+			<field name="name">Room 395</field>
+			<field name="beds">1</field>
+			<field name="price">132</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel2"/>
+		</record>
+
+
+		<record id="room396" model="hoteltrivago.rooms">
+			<field name="name">Room 396</field>
+			<field name="beds">2</field>
+			<field name="price">50</field>
+			<field name="description">Habitación discreta</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r2'), ref('hoteltrivago.photo_r0')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel3"/>
+		</record>
+
+
+		<record id="room397" model="hoteltrivago.rooms">
+			<field name="name">Room 397</field>
+			<field name="beds">3</field>
+			<field name="price">131</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r1'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel0"/>
+		</record>
+
+
+		<record id="room398" model="hoteltrivago.rooms">
+			<field name="name">Room 398</field>
+			<field name="beds">3</field>
+			<field name="price">30</field>
+			<field name="description">Habitación familiar</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r2')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+
+		<record id="room399" model="hoteltrivago.rooms">
+			<field name="name">Room 399</field>
+			<field name="beds">2</field>
+			<field name="price">141</field>
+			<field name="description">Habitación de lujo</field> 
+			<field name="photos" eval="[(6,0,[ref('hoteltrivago.photo_r0'), ref('hoteltrivago.photo_r1')])]"/>
+			<field name="hotels" ref="hoteltrivago.hotel1"/>
+		</record>
+
+</data></odoo>

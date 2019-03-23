@@ -1,0 +1,855 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="hoteltrivago.cities_list_kanban" >
+      <field name="name">hoteltrivago cities kanban</field>
+      <field name="model">hoteltrivago.cities</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="name" />
+          <field name="description" />
+          <field name="location" />
+          <field name="country" />
+          <field name="hotels" />
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_product_vignette">
+                <a type="open">
+                  <field name="name" />
+                </a>
+                <div class="oe_product_desc">
+                  <h4><field name="name" /></h4>
+                  <ul>
+                    <li>Description: <field name="description" /></li>
+                    <li>Location: <field name="location" /></li>
+                    <li>Country: <field name="country" /></li>
+                    <li>Hotels: <field name="hotels" /></li>
+                  </ul>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.cities_list" >
+      <field name="name">hoteltrivago cities</field>
+      <field name="model">hoteltrivago.cities</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="description" />
+          <field name="location" />
+          <field name="country" />
+          <field name="hotels" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.cities_form" >
+      <field name="name">hoteltrivago cities form</field>
+      <field name="model">hoteltrivago.cities</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <div class="row">
+              <div class="col-md-12">
+                <h1 style="text-align:center;opacity:0.7;"><field name="name" /></h1>
+              </div>
+            </div>
+            <group>
+              <group>
+                <field name="name" />
+                <field name="description" />
+              </group>
+              <group>
+                <field name="location" />
+                <field name="country" />
+              </group>
+              <notebook>
+                <page string="Hotels"><field name="hotels" /></page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.cities_search" >
+      <field name="name">hoteltrivago cities search</field>
+      <field name="model">hoteltrivago.cities</field>
+      <field name="arch" type="xml">
+        <search string="Cities">
+          <field name="name" />
+          <field name="description" />
+          <field name="location" />
+          <group string="Group by">
+            <filter name="country" string="Country" context="{'group_by':'country'}" />
+          </group>
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.clients_list" >
+      <field name="name">hoteltrivago Clients</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+         <tree decoration-success="pendienteVenta==True" decoration-danger="pendienteVenta==False">
+          <field name="name" />
+          <field name="comments" />
+          <field name="reservas" />
+          <field name="ventasPendientes" />
+          <field name="pendienteVenta" />
+         </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.clients_form" >
+      <field name="name">hoteltrivago Clients Form</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form" />
+      <field name="arch" type="xml">
+         <xpath expr="//field[@name='email']" position="after">
+           <field name="pendienteVenta" string="Facturado" />
+         </xpath>
+         <xpath expr="//page[@name='sales_purchases']" position="after">
+           <page name="comments" string="Comments">
+             <group>
+               <field name="comments"/>
+             </group>
+           </page>
+           <page name="reservas" string="Bookings">
+             <group>
+               <h3>Reservas</h3>
+               <field name="reservas"/>
+               <h3>Reservas sin facturar</h3>
+               <field name="ventasPendientes"/>
+		<button name="%(select_booking_act)d" type="action" string="Seleccionar reservas" class="btn btn-success oe_read_only"/>
+             </group>
+           </page>
+         </xpath>
+         <xpath expr="//field[@name='lang']" position="after">
+           <button name="%(reserva_wizard_act)d" type="action" string="Wizard reservas" class="btn btn-success oe_read_only"/>
+         </xpath>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.hotels_list" >
+      <field name="name">hoteltrivago hotels</field>
+      <field name="model">hoteltrivago.hotels</field>
+      <field name="arch" type="xml">
+         <tree>
+          <field name="name" />
+          <field name="description" />
+          <field name="stars" />
+          <field name="city" />
+          <field name="country" />
+          <field name="gallery" />
+          <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+          <field name="rooms" />
+          <field name="services" />
+          <field name="comments" />
+          <field name="avgRatings"/>
+          <field name="reservasPasadas"/>
+          <field name="reservasActuales"/>
+          <field name="reservasFuturas"/>
+         </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.hotels_list_kanban" >
+      <field name="name">hoteltrivago hotels kanban</field>
+      <field name="model">hoteltrivago.hotels</field>
+      <field name="arch" type="xml">
+         <kanban>
+          <field name="name" />
+          <field name="description" />
+          <field name="stars" />
+          <field name="city" />
+          <field name="gallery" />
+          <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+          <field name="rooms" />
+          <field name="services" />
+          <field name="avgRatings"/>
+          <templates>
+          <t t-name="kanban-box">
+            <div class="oe_product_vignette">
+              <a type="open">
+              <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+              </a>
+              <div class="oe_product_desc">
+                <h4>
+                  <a type="edit">
+                    <field name="name"/>
+                  </a>
+                </h4>
+                <ul>
+                  <li><field name="description"/></li>
+                  <li>Stars: <field name="stars"/></li>
+                  <li>AVG Rat: <field name="avgRatings"/></li>
+                  <li><field name="city"/>,<field name="country"/></li>
+                </ul>
+              </div>
+            </div>
+          </t>
+          </templates>
+         </kanban>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.hotels_form" >
+      <field name="name">hoteltrivago hotels form</field>
+      <field name="model">hoteltrivago.hotels</field>
+      <field name="arch" type="xml">
+         <form>
+          <sheet>
+            <h1 style="opacity:0.7;text-align:center;"><field name="name" /></h1>
+            <group>
+              <group>
+                <h5><field name="name"/></h5>
+                <h5><field name="description"/></h5>
+              </group>
+              <group>
+                <h5><field name="city"/></h5>
+                <h5>Stars: <field name="stars"/></h5>
+              </group>
+              <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+            </group>
+            <div class="row" style="text-align:center;">
+              <div class="col-md-12">
+                <h4>Services</h4>
+                <field name="services">
+                <kanban>
+                  <templates>
+                    <t t-name="kanban-box">
+                      <div class="oe_product_vignette" style="border:none;flex:0;width:auto;">
+                        <a type="open">
+                          <field name="icon" widget="image"/>
+                        </a>
+                      </div>
+                    </t>
+                  </templates>
+                </kanban>
+                </field>
+              </div>
+            </div>
+            <notebook>
+              <page string="Rooms">
+               <a type="open">
+                <field name="rooms"/>
+               </a>
+              </page>
+              <page string="Gallery">
+               <field name="gallery">
+                <kanban>
+                  <templates>
+                    <t t-name="kanban-box">
+                      <div class="oe_product_vignette">
+                        <a type="open">
+                          <field name="photo" widget="image" class="oe_left oe_avatar"/>
+                        </a>
+                        <p><field name="name" widget="char"/></p>
+                      </div>
+                    </t>
+                  </templates>
+                </kanban>
+               </field>
+              </page>
+              <page string="Bookings">
+                <h3>Past Bookings</h3>
+                <field name="reservasPasadas"/>
+                <h3>Current Bookings</h3>
+                <field name="reservasActuales"/>
+                <h3>Future Bookings</h3>
+                <field name="reservasFuturas"/>
+              </page>
+              <page string="Comments">
+               <a type="open">
+                <field name="comments"/>
+               </a>
+              </page>
+            </notebook>
+          </sheet>
+         </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.hotels_search" >
+      <field name="name">hoteltrivago hotels search</field>
+      <field name="model">hoteltrivago.hotels</field>
+      <field name="arch" type="xml">
+         <search>
+          <field name="name" />
+          <field name="description" />
+          <field name="services" />
+          <group>
+            <filter name="city" string="City" context="{'group_by':'city'}"/>
+            <filter name="country" string="Country" context="{'group_by':'country'}"/>
+          </group>
+         </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.rooms_list" >
+      <field name="name">hoteltrivago rooms</field>
+      <field name="model">hoteltrivago.rooms</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="beds" />
+          <field name="photos" />
+          <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+          <field name="price" />
+          <field name="description" />
+          <field name="hotels" />
+          <field name="reservas" />
+          <field name="stay_in" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.rooms_list_kanban" >
+      <field name="name">hoteltrivago rooms kanban</field>
+      <field name="model">hoteltrivago.rooms</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="name" />
+          <field name="beds" />
+          <field name="photos" />
+          <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+          <field name="price" />
+          <field name="description" />
+          <field name="hotels" />
+          <field name="reservas" />
+          <field name="stay_in" />
+            <templates>
+              <t t-name="kanban-box">
+                <div class="o_kanban_image">
+                  <a type="open">
+          <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+                  </a>
+                  <div class="oe_product_desc">
+                    <ul>
+                      <li><h4><field name="name"/></h4></li>
+                      <li>Beds: <field name="beds"/></li>
+                      <li>Price: <field name="price"/>€</li>
+                      <li><field name="description"/> - <field name="stay_in" /></li>
+                      <li>Hotel: <field name="hotels"/></li>
+                      <li>Bookings: <field name="reservas"/></li>
+                    </ul>
+                  </div>
+                </div>
+              </t>
+            </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.rooms_form" >
+      <field name="name">hoteltrivago rooms form</field>
+      <field name="model">hoteltrivago.rooms</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <h3 style="opacity:0.5;text-align:center;"><field name="name"/></h3>
+            <h4 style="opacity:0.5;text-align:center;"><field name="hotels"/></h4>
+            <group>
+              <group>
+                <h5>Beds: <field name="beds"/></h5>
+              </group>
+              <group>
+                <h5><field name="price"/>€</h5>
+              </group>
+              <h4><field name="description"/></h4>
+            </group>
+            <field name="foto_principal" widget="image" class="oe_left oe_avatar" width="200px"/>
+            <notebook>
+              <page string="Gallery">
+                <field name="photos">
+                  <kanban>
+                    <templates>
+                      <t t-name="kanban-box">
+                        <div class="oe_product_vignette">
+                          <a type="open">
+                            <field name="photo" widget="image" class="oe_left oe_avatar"/>
+                          </a>
+                        </div>
+                      </t>
+                    </templates>
+                  </kanban>
+                </field>
+              </page>
+              <page string="Bookings">
+                <field name="reservas" />
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.rooms_search" >
+      <field name="name">hoteltrivago rooms search</field>
+      <field name="model">hoteltrivago.rooms</field>
+      <field name="arch" type="xml">
+        <search string="room">
+          <field name="name" />
+          <group>
+            <filter name="hotels" string="Hotel" context="{'group_by':'hotels'}"/>
+            <filter name="stay_in" string="Disponibility" context="{'group_by':'stay_in'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.services_list" >
+      <field name="name">hoteltrivago services</field>
+      <field name="model">hoteltrivago.services</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="icon" widget="image" class="oe_left oe_avatar" />
+          <field name="hotels" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.photos_h_list" >
+      <field name="name">hoteltrivago photos_hotel</field>
+      <field name="model">hoteltrivago.photos_h</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="photo" widget="image" class="oe_left oe_avatar" width="200px" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.photos_r_list" >
+      <field name="name">hoteltrivago photos_room</field>
+      <field name="model">hoteltrivago.photos_r</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="photo" widget="image" class="oe_left oe_avatar" width="200px" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.reservas" >
+      <field name="name">hoteltrivago reservas</field>
+      <field name="model">hoteltrivago.reservas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="rooms" />
+          <field name="fechaInicio" />
+          <field name="fechaFinal" />
+          <field name="sales" />
+          <field name="estado" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.reservas_kanban" >
+      <field name="name">hoteltrivago reservas kanban</field>
+      <field name="model">hoteltrivago.reservas</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="name" />
+          <field name="rooms" />
+          <field name="fechaInicio" />
+          <field name="fechaFinal" />
+          <templates>
+            <t t-name="kanban-box">
+              <div class="o_kanban_image">
+                  <a type="open">
+                    <field name="name"/>
+                  </a>
+                  <div class="oe_product_desc">
+                    <ul>
+                      <li><h4><field name="name"/></h4></li>
+                      <li>Room: <field name="rooms"/></li>
+                      <li>Start stay: <field name="fechaInicio"/></li>
+                      <li>End stay: <field name="fechaFinal"/></li>
+                    </ul>
+                  </div>
+                </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.reservas_form" >
+      <field name="name">hoteltrivago reservas form</field>
+      <field name="model">hoteltrivago.reservas</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <h3 style="opacity:0.5;text-align:center;margin-left:20%;margin-right:20%;"><field name="name"/></h3>
+            <h4 style="opacity:0.5;text-align:center;">Room:<field name="rooms"/></h4>
+            <group>
+              <group>
+                <h5 style="text-align:center;margin-left:10%;margin-right:10%;">Start stay <field name="fechaInicio"/></h5>
+              </group>
+              <group>
+                <h5 style="text-align:center;margin-left:10%;margin-right:10%;">End stay <field name="fechaFinal"/></h5>
+              </group>
+            </group>
+            <group>
+             <group>
+              <h2>Client</h2>
+              <h3><field name="client"/></h3>
+             </group>
+             <group>
+              <h2>Sale</h2>
+              <h3><field name="sales"/></h3>
+             </group>
+             <group>
+              <button name="crear_venta" type="object" string="Crear venta de la reserva" class="btn btn-success oe_read_only"/>
+              <button name="crear_ventas_cliente" type="object" string="Crear venta de todas las reservas del cliente" class="btn btn-info oe_read_only"/>
+              <button name="%(reserva_wizard_act)d" type="action" string="Wizard reservas" class="btn btn-success oe_read_only"/>
+             </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="select_booking_wizard">
+      <field name="name">hoteltrivago select booking wizard</field>
+      <field name="model">select.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Selecciona reserva">
+          <group>
+            <field name="client"/>
+          </group>
+          <field name="reservasPendientes" widget="many2many">
+            <tree create="true" delete="true">
+              <field name="name" />
+              <field name="fechaInicio"/>
+              <field name="fechaFinal"/>
+              <field name="numDies"/>
+            </tree>
+          </field>
+          <footer>
+            <button name="launch" type="object" string="Launch" class="oe_highlight" />
+            <button special="cancel" string="Cancel"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+
+    <act_window id="select_booking_act" name="Seleccionar reserva" src_model="res.partner" res_model="select.wizard" view_mode="form" target="new" key2="client_action_multi"/>
+
+
+    <record model="ir.ui.view" id="hoteltrivago.reservas_wizard" >
+      <field name="name">hoteltrivago reservas wizard</field>
+      <field name="model">hoteltrivago.reserva_wizard</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <field name="state" widget="statusbar"/>
+          </header>
+          <group>
+            <h3>Localización</h3>
+              <group>
+                <field name="clients"/>
+                <field name="cities"/>
+                <field name="min_stars"/>
+                <field name="max_stars"/>
+              </group>
+              <group>
+                <field name="countries"/>
+                <field name="country" domain="[('id', 'in',countries)]"/> <field name="imagenpais" widget="image" readonly="1"/>
+              </group>
+          </group>
+          <group states="hotels">
+            <h3>Filtros del hotel</h3>
+              <group>
+                <field name="beds"/>
+                <field name="prices" string="Precios máximos"/>
+              </group>
+              <group>
+                <field name="services">
+                  <tree>
+                    <field name="name"/>
+                    <field name="icon" widget="image"/>
+                  </tree>
+                </field>
+              </group>
+          </group>
+          <group states="rooms">
+              <group>
+                <h3>Dias de la reserva</h3>
+                <field name="fechaInicio"/>
+                <field name="fechaFinal"/>
+              </group>
+          </group>
+          <div states="fin">
+            <h3>Habitaciones</h3>
+            <field name="rooms" widget="many2many" options="{'limit': 10, 'create': false, 'create_edit': false}">
+              <tree limit="10">
+                <field name="hotels"/>
+                <field name="name" />
+                <button name="reservar_habitacion" type="object" context="{'fechaInicio': parent.fechaInicio, 'fechaFinal': parent.fechaFinal, 'client': parent.clients}" string="Reserva Room" class="btn btn-info" />
+              </tree>
+            </field>
+          </div>
+          <div states="fin">
+            <h3>Hoteles Filtrados</h3>
+            <field name="hotels">
+              <tree limit="10">
+                <field name="foto_principal"/>
+                <field name="name"/>
+                <field name="avgRatings"/>
+                <field name="stars" />
+                <button name="reservar_habitacion" type="object" context="{'fechaInicio': parent.fechaInicio, 'fechaFinal': parent.fechaFinal, 'client': parent.clients}" string="Reserva Room in this hotel" class="btn btn-success" />
+              </tree>
+            </field>
+          </div>
+          <footer>
+            <button name="siguiente_paso" type="object" string="Siguiente paso" class="btn btn-info "/>
+            <button name="fin" type="object" string="Reserva" class="btn btn-success "/>
+            <button special="cancel" string="Cancelar" class="btn btn-danger "/>
+          </footer>
+        </form>
+      </field>
+    </record>
+    
+    <act_window id="reserva_wizard_act" name="Seleccionar reserva" src_model="hoteltrivago.reservas" res_model="hoteltrivago.reserva_wizard" view_mode="form" target="new" key2="client_action_multi"/>
+
+    <record model="ir.ui.view" id="hoteltrivago.reservas_cal">
+      <field name="name">fase1 calendar</field>
+      <field name="model">hoteltrivago.reservas</field>
+      <field name="arch" type="xml">
+        <calendar date_start="fechaInicio" date_stop="fechaFinal" color="name">
+          <field name="name" />
+          <field name="rooms" />
+          <field name="fechaInicio" />
+          <field name="fechaFinal" /> 
+        </calendar>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.reservas_search" >
+      <field name="name">hoteltrivago reservas search</field>
+      <field name="model">hoteltrivago.reservas</field>
+      <field name="arch" type="xml">
+          <search>
+            <group>
+              <filter name="rooms" string="Room" context="{'group_by':'rooms'}"/>
+            </group>
+          </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.comments" >
+      <field name="name">hoteltrivago comments</field>
+      <field name="model">hoteltrivago.comments</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="client" />
+          <field name="photo_cl" widget="image" class="oe_left oe_avatar" width="100px"/>
+          <field name="name_cl" />
+          <field name="hotels" />
+          <field name="description" />
+          <field name="rating" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.comments_form" >
+      <field name="name">hoteltrivago comments form</field>
+      <field name="model">hoteltrivago.comments</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <h3 style="opacity:0.5;text-align:center;margin-left:20%;margin-right:20%;"><field name="name"/></h3>
+            <h4 style="opacity:0.5;text-align:center;"><field name="client"/></h4>
+            <group>
+              <group>
+                <h5 style="text-align:center;margin-left:10%;margin-right:5%;"><field name="photo_cl" widget="image" class="oe_left oe_avatar" width="100px"/></h5>
+                <h5 style="text-align:center;margin-right:10%;"><field name="name_cl"/></h5>
+              </group>
+              <group>
+                <h5 style="text-align:center;margin-left:10%;margin-right:10%;"><field name="description"/></h5>
+                <h5 style="text-align:center;margin-left:10%;margin-right:10%;"><field name="hotels"/> - <field name="rating"/></h5>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.sales_tree" >
+      <field name="name">hoteltrivago sales</field>
+      <field name="model">sale.order.line</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="order_id" />
+          <field name="name" />
+          <field name="price_unit"/>
+          <field name="product_id" />
+          <field name="product_uom_qty" />
+          <field name="product_uom" />
+          <field name="reservas" />
+          <field name="nomHabitacio" string="Room's name"/>
+          <field name="nomHotel" string="Hotel's name"/>
+          <field name="numDies" string="Days"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="hoteltrivago.sales_form" >
+      <field name="name">hoteltrivago sales form</field>
+      <field name="model">sale.order.line</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+             <h4 style="opacity:0.5;text-align:center;margin-left:20%;margin-right:20%;">Order id: <field name="order_id"/></h4>
+             <h4 style="opacity:0.5;text-align:center;">Name: <field name="name"/></h4>
+            </group>
+            <group>
+              <group>
+                <h5 style="text-align:center;margin-right:10%;">Price unit:<field name="price_unit"/></h5>
+                <h5 style="text-align:center;margin-right:10%;">Product id:<field name="product_id"/></h5>
+              </group>
+              <group>
+                <h5 style="text-align:center;margin-left:10%;margin-right:10%;">Quantity: <field name="product_uom_qty"/></h5>
+              </group>
+              <group>
+                <h4>Room: <field name="nomHabitacio"/></h4>
+                <h4>Hotel: <field name="nomHotel"/></h4>
+                <h4>Days: <field name="numDies"/></h4>
+              </group>
+            </group>
+              <notebook>
+                <page string="Bookings"><field name="reservas" /></page>
+              </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="hoteltrivago.action_window">
+      <field name="name">hoteltrivago window</field>
+      <field name="res_model">hoteltrivago.hoteltrivago</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="hoteltrivago.action_cities_window">
+      <field name="name">Cities</field>
+      <field name="res_model">hoteltrivago.cities</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>    
+
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_clients_window">
+      <field name="name">Clients</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('reservas', '>', 0)]</field>
+    </record>
+
+    <record model="ir.actions.act_window.view" id="hoteltrivago.action_clients_list_window">
+      <field eval="1" name="sequence" />
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="hoteltrivago.clients_list"/>
+      <field name="act_window_id" ref="hoteltrivago.action_clients_window" />
+    </record>
+
+    <record model="ir.actions.act_window.view" id="hoteltrivago.action_clients_form_window">
+      <field eval="2" name="sequence" />
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="hoteltrivago.clients_form"/>
+      <field name="act_window_id" ref="hoteltrivago.action_clients_window" />
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_hotels_window">
+      <field name="name">Hotels</field>
+      <field name="res_model">hoteltrivago.hotels</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_services_window">
+      <field name="name">Services</field>
+      <field name="res_model">hoteltrivago.services</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record> 
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_rooms_window">
+      <field name="name">Rooms</field>
+      <field name="res_model">hoteltrivago.rooms</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_photos_h_window">
+      <field name="name">Hotel Photos</field>
+      <field name="res_model">hoteltrivago.photos_h</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_photos_r_window">
+      <field name="name">Room Photos</field>
+      <field name="res_model">hoteltrivago.photos_r</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_reservas_window">
+      <field name="name">Reservas</field>
+      <field name="res_model">hoteltrivago.reservas</field>
+      <field name="view_mode">tree,form,kanban,calendar</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_comments_window">
+      <field name="name">Comments</field>
+      <field name="res_model">hoteltrivago.comments</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="hoteltrivago.action_sales_window">
+      <field name="name">Sales</field>
+      <field name="res_model">sale.order.line</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('reservas.estado', '=', 'Procesado')]</field>
+    </record>
+
+    <!-- Top menu item -->
+    
+    <menuitem name="Hotel? Trivago" id="hoteltrivago.menu_root"/>
+    
+    <!-- menu categories -->
+    
+    <menuitem name="Hotel administration" id="hoteltrivago.menu_1" parent="hoteltrivago.menu_root"/>
+
+    <!-- actions -->
+    
+    <menuitem name="Cities" id="hoteltrivago.menu_1_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_cities_window" />
+   
+    <menuitem name="Clients" id="hoteltrivago.menu_2_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_clients_window" />
+    <menuitem name="Hotels" id="hoteltrivago.menu_3_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_hotels_window" />
+
+    <menuitem name="Rooms" id="hoteltrivago.menu_4_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_rooms_window" />
+    <menuitem name="Services" id="hoteltrivago.menu_5_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_services_window" />
+    <menuitem name="Hotel Photos" id="hoteltrivago.menu_6_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_photos_h_window" />
+    <menuitem name="Room Photos" id="hoteltrivago.menu_7_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_photos_r_window" />
+    <menuitem name="Reservas" id="hoteltrivago.menu_8_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_reservas_window" />
+    <menuitem name="Comments" id="hoteltrivago.menu_9_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_comments_window" />
+    <menuitem name="Sales" id="hoteltrivago.menu_10_list" parent="hoteltrivago.menu_1" action="hoteltrivago.action_sales_window" />
+
+    <!--
+    <menuitem name="Server to list" id="hoteltrivago" parent="hoteltrivago.menu_2"
+              action="hoteltrivago.action_server"/>
+    -->
+  </data>
+</odoo>

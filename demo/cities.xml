@@ -1,0 +1,22 @@
+
+<odoo>
+  <data>
+
+    <record id="city0" model="hoteltrivago.cities">
+      <field name="name">Barcelona</field>
+      <field name="description">Una ciudad preciosa con una buena gastronomía</field>
+      <field name="location">Catalunya</field>
+      <field name="country" ref="base.es"/>
+    </record>
+
+
+    <record id="city1" model="hoteltrivago.cities">
+      <field name="name">Xátiva</field>
+      <field name="description">Zonas rurales cerquísimas, rodeado de naturaleza</field>
+      <field name="location">Comunidad Valenciana</field>
+      <field name="country" ref="base.es"/>
+    </record>
+
+
+  </data>
+</odoo>

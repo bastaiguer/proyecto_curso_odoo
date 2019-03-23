@@ -1,0 +1,46 @@
+
+<odoo>
+  <data>
+
+    <record id="hotel0" model="hoteltrivago.hotels">
+      <field name="name">Hotel 0</field>
+      <field name="stars">3</field>
+      <field name="description">Description1</field>
+      <field name="city" ref="hoteltrivago.city1"/>
+      <field name="gallery" eval="[(6,0,[ref('hoteltrivago.photo_h0'), ref('hoteltrivago.photo_h1')])]"/>
+      <field name="services" eval="[(6,0,[ref('hoteltrivago.service0'),ref('hoteltrivago.service2')])]" />
+    </record>
+
+
+    <record id="hotel1" model="hoteltrivago.hotels">
+      <field name="name">Hotel 1</field>
+      <field name="stars">2</field>
+      <field name="description">Description2</field>
+      <field name="city" ref="hoteltrivago.city0"/>
+      <field name="gallery" eval="[(6,0,[ref('hoteltrivago.photo_h0'), ref('hoteltrivago.photo_h1')])]"/>
+      <field name="services" eval="[(6,0,[ref('hoteltrivago.service1'),ref('hoteltrivago.service0')])]" />
+    </record>
+
+
+    <record id="hotel2" model="hoteltrivago.hotels">
+      <field name="name">Hotel 2</field>
+      <field name="stars">2</field>
+      <field name="description">Description2</field>
+      <field name="city" ref="hoteltrivago.city0"/>
+      <field name="gallery" eval="[(6,0,[ref('hoteltrivago.photo_h0'), ref('hoteltrivago.photo_h1')])]"/>
+      <field name="services" eval="[(6,0,[ref('hoteltrivago.service4'),ref('hoteltrivago.service1')])]" />
+    </record>
+
+
+    <record id="hotel3" model="hoteltrivago.hotels">
+      <field name="name">Hotel 3</field>
+      <field name="stars">5</field>
+      <field name="description">Description5</field>
+      <field name="city" ref="hoteltrivago.city0"/>
+      <field name="gallery" eval="[(6,0,[ref('hoteltrivago.photo_h0'), ref('hoteltrivago.photo_h1')])]"/>
+      <field name="services" eval="[(6,0,[ref('hoteltrivago.service3'),ref('hoteltrivago.service4')])]" />
+    </record>
+
+
+  </data>
+</odoo>
